@@ -77,4 +77,4 @@ def get_image_path_list(train_or_test, data_dir):
 if __name__ == '__main__':
 
     #make_positive_index_market1501('train', '/home/ubuntu/workspace/CVPR2015-CNN-for-ReID-master/dataset/market-1501')
-    make_positive_index_market1501('test', '/home/ubuntu/workspace/CVPR2015-CNN-for-ReID-master/dataset/market-1501')
+    make_positive_index_market1501('test', 'dataset/market-1501')
