@@ -21,7 +21,7 @@ class NumpyArrayIterator_for_Market1501(pre_image.Iterator):
             dim_ordering = K.image_dim_ordering()
         self.f = f
         self.path_list = path_list
-        self.folder_dir = '/home/ubuntu/workspace/CVPR2015-CNN-for-ReID-master/dataset/market-1501/bounding_box_' + train_or_validation + '/'
+        self.folder_dir = 'dataset/market-1501/bounding_box_' + train_or_validation + '/'
         self.train_or_validation = train_or_validation
         self.flag = flag
         self.image_data_generator = image_data_generator

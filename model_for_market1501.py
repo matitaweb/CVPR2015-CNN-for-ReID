@@ -258,7 +258,7 @@ def compiler_def(model, *args, **kw):
 
 def train(model,weights_name='new_weights_on_market1501_0_0',train_num=1,one_epoch=100,epoch_num=10,flag_random=True,random_pattern=lambda x:x/2+0.5, flag_train=0,flag_val=1,nb_val_samples=1000,batch_size=32):
     
-    data_dir = '/home/ubuntu/workspace/CVPR2015-CNN-for-ReID-master/dataset/market-1501'
+    data_dir = 'dataset/market-1501'
     training_set_positive_index_market1501 = get_list_positive_index_market1501('train', data_dir)
     test_set_positive_index_market1501 = get_list_positive_index_market1501('test', data_dir)
     f =[]
