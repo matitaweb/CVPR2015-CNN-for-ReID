@@ -51,7 +51,7 @@ if __name__ == '__main__':
     model = compiler_def(model)
     print ('model compile done.')
     
-    model.load_weights('weights.1/weights_on_market1501_0_0_2.h5')
+    model.load_weights('weights/weights_on_market1501_0_0_2.h5')
     #print (model.to_json())
     
     data_dir = 'dataset/market-1501'
@@ -86,32 +86,9 @@ if __name__ == '__main__':
             path_img_dict = 'dataset/pedestrian-reidentification-model-trainer/dictionary/'+d
             pred = single_test(model, path_img_test, path_img_dict)
             print(t,  d,  str(pred))
-        print ("--------------")
+        print ("----------------------------")
     
-        
-    """
-    pred = single_test(model, path1, path2)
-    print("pedestrian 02 -> 01_002 : " +  str(pred))
     
-    path1 = 'dataset/pedestrian-reidentification-model-trainer/dictionary/01.jpg'
-    path2 = 'dataset/pedestrian-reidentification-model-trainer/test/99_001.jpg'
-    pred = single_test(model, path1, path2)
-    print("pedestrian 01 -> 99_001 : " +  str(pred))
-    
-    path1 = 'dataset/pedestrian-reidentification-model-trainer/dictionary/02.jpg'
-    path2 = 'dataset/pedestrian-reidentification-model-trainer/test/99_001.jpg'
-    pred = single_test(model, path1, path2)
-    print("pedestrian 02 -> 99_001 : " +  str(pred))
-
-    a= np.array(Image.open(path1))[:, :, :3]
-    img = Image.fromarray(a, 'RGB')
-    img.save('dataset_a.jpg')
-    print(a)
-    b= np.array(Image.open(path2))[:, :, :3]
-    img = Image.fromarray(b, 'RGB')
-    img.save('dataset_n.jpg')
-    print(b)
-    """
     
     
     

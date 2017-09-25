@@ -74,7 +74,10 @@ def get_image_path_list(train_or_test, data_dir):
         return sorted(os.listdir(folder_path))[6617:]
 
 
+"""
+# FOR TESTING
 if __name__ == '__main__':
 
     #make_positive_index_market1501('train', 'dataset/market-1501')
     make_positive_index_market1501('test', 'dataset/market-1501')
+"""
